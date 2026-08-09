@@ -175,13 +175,10 @@ mysql -uroot -proot test_db -e "SHOW TABLES;"
 
 ## 📸 Project Screenshots
 
-Add application screenshots to the `screenshots/` directory and reference them here:
-
-```markdown
 ![Application](screenshots/application.png)
 ![Kubernetes Pods](screenshots/kubernetes.png)
 ![MySQL Storage](screenshots/mysql.png)
-```
+
 
 ---
 
