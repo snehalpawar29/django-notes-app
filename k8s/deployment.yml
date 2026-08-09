@@ -1,0 +1,49 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: django-deployment
+  namespace: django-ns
+  labels:
+    app: notes-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: notes-app
+
+  template:
+    metadata:
+      name: django-pod
+      labels:
+        app: notes-app
+
+    spec:
+      containers:
+        - name: django-frontend
+          image: snehalpawar2945/notes-app
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8000
+              name: django
+
+          env:
+            - name: DB_NAME
+              value: "test_db"
+
+            - name: DB_USER
+              value: "root"
+
+            - name: DB_PASSWORD
+              value: "root"
+
+            - name: DB_HOST
+              value: "mysql-service"
+
+            - name: DB_PORT
+              value: "3306"
+
+

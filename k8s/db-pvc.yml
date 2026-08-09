@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+  namespace: django-ns
+spec:
+  storageClassName: manual       # Must match the PV's StorageClass name
+  accessModes:
+    - ReadWriteOnce                # Must be supported by the matching PV
+  resources:
+    requests:
+      storage: 1Gi    
+
+
