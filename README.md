@@ -179,8 +179,8 @@ Add application screenshots to the `screenshots/` directory and reference them h
 
 ```markdown
 ![Application](screenshots/application.png)
-![Kubernetes Pods](screenshots/kubernetes-pods.png)
-![MySQL Storage](screenshots/mysql-storage.png)
+![Kubernetes Pods](screenshots/kubernetes.png)
+![MySQL Storage](screenshots/mysql.png)
 ```
 
 ---
