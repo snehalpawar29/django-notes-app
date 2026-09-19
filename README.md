@@ -276,10 +276,6 @@ This helps verify database connectivity and the presence of application tables.
 
 ![MySQL Storage](screenshots/mysql.png)
 
-### Architecture
-
-![Django Notes App Architecture](screenshots/architecture.png)
-
 ---
 
 ## 📚 Documentation
